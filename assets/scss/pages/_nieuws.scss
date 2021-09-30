@@ -1,0 +1,23 @@
+.breadcrumb li,
+.breadcrumb a {
+  color: $clr-grey;
+  text-decoration: none;
+}
+.news-article {
+  border: none;
+  img {
+    clip-path: polygon(0 0, 100% 0, 97% 96%, 0% 100%);
+  }
+  .btn-primary {
+    font-size: 16px;
+  }
+  .news-date,
+  .document-date {
+    font-family: $secondary-font;
+    font-weight: $secondary-font-weight-regular;
+    color: $clr-main;
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+}
+

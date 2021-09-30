@@ -1,0 +1,43 @@
+h1 {
+  font-family: $secondary-font;
+  color: $clr-main;
+  font-weight: $secondary-font-weight-bold;
+  margin-bottom: 40px;
+}
+
+h2, h3, h4 {
+  font-family: $secondary-font;
+  color: $clr-black;
+}
+
+h2 {
+  font-weight: $secondary-font-weight-semibold;
+  font-size: 32px;
+  color: $clr-black;
+}
+
+h3 {
+  font-weight: $secondary-font-weight-bold;
+  font-size: 24px;
+}
+
+h4 {
+  font-weight: var($main-font-weight-bold);
+  font-size: 20px;
+  font-family: $main-font;
+}
+
+p, a {
+  font-family: $main-font;
+  color: $clr-black;
+  font-weight: $main-font-weight-regular;
+}
+
+a:hover {
+  color: $clr-black;
+  cursor: pointer;
+}
+
+i {
+  margin-right: 8px;
+}

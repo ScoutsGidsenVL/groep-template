@@ -1,0 +1,106 @@
+.contact-wrapper {
+  margin-top: 80px;
+  h2 {
+    margin-top: 80px;
+    margin-bottom: 30px;
+    &.h2-alt {
+      font-weight: $main-font-weight-light;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.contact-card {
+  border: none;
+  background-color: $clr-main-20;
+  padding-right: 80px;
+  padding-left: 80px;
+  @media all and (max-width: 830px) {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+  .card-body {
+    .card-text {
+      font-size: 20px;
+      font-weight: $main-font-weight-light;
+      color: $clr-black;
+      margin-top: 8px;
+      margin-bottom: 8px;
+      &:nth-child(3) {
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+      &:last-child {
+        margin-top: 0;
+      }
+    }
+    span {
+      font-weight: $main-font-weight-semibold;
+    }
+    .number {
+      color: $clr-main;
+      font-weight: $main-font-weight-regular;
+    }
+    select#controlContactDropdown,
+    option#controlContactDropdown,
+    .form-select#controlContactDropdown {
+      padding: 16px 32px 16px 16px;
+    }
+
+  }
+}
+.contact-form-wrapper {
+  margin: 80px auto;
+  form label {
+    font-family: $main-font;
+    font-weight: $main-font-weight-semibold;
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+  .form-group {
+    margin-bottom: 24px;
+  }
+  .form-control {
+    padding: 16px 32px 16px 16px;
+    border: 1px solid $clr-grey-light;
+    border-radius: 3px;
+    font-size: 20px;
+    font-family: $main-font;
+    color: $clr-black;
+
+  }
+}
+.accordion-card {
+  border: none;
+  margin-bottom: 16px;
+  &:last-child {
+    margin-bottom: 40px;
+  }
+  .card-header {
+    background-color: transparent;
+    padding-left: 0;
+  }
+  .btn-link {
+    font-size: 20px;
+    font-weight: $main-font-weight-semibold;
+    text-decoration: none;
+    color: $clr-black;
+    padding: 0;
+  }
+  .accordion-button {
+    &:not(.collapsed),
+    &:hover{
+      background-color: transparent;
+      color: $clr-main;
+      box-shadow: none;
+    }
+    &::after {
+      color: $clr-main;
+    }
+  }
+  .card-body {
+    font-family: $main-font;
+    font-weight: $main-font-weight-light;
+    font-size: 20px;
+  }
+}

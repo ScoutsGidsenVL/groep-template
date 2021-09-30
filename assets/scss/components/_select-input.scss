@@ -1,0 +1,15 @@
+select,
+option,
+.form-select {
+  font-size: 20px;
+  font-family: $main-font;
+  font-weight: $main-font-weight-light;
+
+  &#controlContactDropdown {
+    background-color: transparent;
+    border: 1px solid $clr-secondary;
+    border-radius: 3px;
+    color: $clr-black;
+    padding: 16px;
+  }
+}

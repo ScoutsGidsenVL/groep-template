@@ -1,0 +1,41 @@
+.document-section {
+  margin-top: 80px;
+  .document-article-wrapper {
+    border: none;
+    .card-body {
+      padding-right: 40px;
+      padding-left: 40px;
+      clip-path: polygon(0 0, 100% 0%, 98% 100%, 0% 100%);
+      background-color: $clr-tertiary;
+    }
+    .document-date {
+      margin-top: 16px;
+    }
+    .card-text {
+      min-height: 60px;
+    }
+    i {
+      margin-right: 8px;
+    }
+  }
+}
+.pagination-wrapper {
+  margin-top: 80px;
+  .pagination {
+    .page-link {
+      border: none;
+      color: $clr-black;
+      &:hover {
+        background-color: transparent;
+        text-decoration: underline;
+        color: $clr-secondary;
+      }
+    }
+    .active > .page-link {
+      border: none;
+      background-color: transparent;
+      text-decoration: underline;
+      color: $clr-main;
+    }
+  }
+}

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- stylesheet to load used fonts 'Aglet Slab' and 'Museo Sans' -->
+    <link rel="stylesheet" href="https://use.typekit.net/qkr8fen.css">
+    <!-- stylesheet from framework Bootstrap needed for framework based styling -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- stylesheet for using the Bootstrap icons library -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- own stylesheet for self written styling -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <!-- own stylesheet for self written styling -->
+    <link rel="stylesheet" href="./assets/scss/style.css">
+    <!-- Page title visible in the tab of your browser -->
+    <title>Contact - Scouts Volta</title>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-light fixed-top navbar-expand-lg">
+        <div class="header-logo-wrapper position-absolute">
+            <div class="header-logo">
+                <div class="header-logo-img"></div>
+            </div>
+        </div>
+        <div class="container-fluid container-3xl d-flex justify-content-between">
+            <a class="navbar-brand" href="index.html">Scouts Volta</a>
+            <div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon">
+                        <i class="bi-list"></i>
+                    </span>
+                </button>
+                <div class="offcanvas offcanvas-end w-100 d-md-none" data-bs-backdrop="false" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <a class="offcanvas-title navbar-brand" id="offcanvasNavbarLabel" href="index.html">Scouts Volta</a>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+                        </button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="nieuws.html">Nieuws</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Takken</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Lid worden?</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Nuttige info <i class="bi-chevron-right"></i>
+                                </a>
+                                <div class="dropdown-menu" role="menu" aria-labelledby="navbarDropdown">
+                                    <ul class="container-3xl mx-auto">
+                                        <li><a class="dropdown-item" href="#">Coronamaatregelen</a></li>
+                                        <li><a class="dropdown-item" href="#">Maandbrief</a></li>
+                                        <li><a class="dropdown-item" href="documenten.html">Documenten</a></li>
+                                        <li><a class="dropdown-item" href="#">Verhuur</a></li>
+                                        <li><a class="dropdown-item" href="#">Uniform</a></li>
+                                        <li><a class="dropdown-item" href="#">Verloren voorwerpen</a></li>
+                                        <li><a class="dropdown-item" href="#">Veelgestelde vragen</a></li>
+                                        <li><a class="dropdown-item" href="#">Drank- en drugsbeleid</a></li>
+                                        <li><a class="dropdown-item" href="#">GDPR</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Over ons <i class="bi-chevron-right"></i></a>
+                                <div class="dropdown-menu" role="menu" aria-labelledby="navbarDropdown">
+                                    <ul class="container-3xl mx-auto">
+                                        <li class="container-3xl"><a class="dropdown-item" href="#">Foto's</a></li>
+                                        <li class="container-3xl"><a class="dropdown-item" href="#">Jaarthema</a></li>
+                                        <li class="container-3xl"><a class="dropdown-item" href="#">Wie zijn wij?</a></li>
+                                        <li class="container-3xl"><a class="dropdown-item" href="#">Wat is scouts?</a></li>
+                                        <li class="container-3xl"><a class="dropdown-item" href="#">VZW</a></li>
+                                        <li class="container-3xl"><a class="dropdown-item" href="#">Achter de schermen</a></li>
+                                        <li class="container-3xl"><a class="dropdown-item" href="#">Informatieplicht vrijwilligers</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Overig <i class="bi-chevron-right"></i></a>
+                                <div class="dropdown-menu" role="menu" aria-labelledby="navbarDropdown">
+                                    <ul class="container-3xl mx-auto">
+                                        <li class="container-3xl"><a class="dropdown-item" href="#">Uitpas & Scouting op Maat</a></li>
+                                        <li class="container-3xl"><a class="dropdown-item" href="#">Groepsadministratie</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="nav nav-pills">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse" id="main_nav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="nieuws.html">Nieuws</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Takken</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Lid worden?</a></li>
+                        <li class="nav-item dropdown has-megamenu">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Nuttige info <i class="bi-chevron-down"></i></a>
+                            <div class="dropdown-menu megamenu" role="menu" aria-labelledby="navbarDropdown">
+                                <ul class="container-3xl mx-auto">
+                                    <li><a class="dropdown-item" href="#">Coronamaatregelen</a></li>
+                                    <li><a class="dropdown-item" href="#">Maandbrief</a></li>
+                                    <li><a class="dropdown-item" href="documenten.html">Documenten</a></li>
+                                    <li><a class="dropdown-item" href="#">Verhuur</a></li>
+                                    <li><a class="dropdown-item" href="#">Uniform</a></li>
+                                    <li><a class="dropdown-item" href="#">Verloren voorwerpen</a></li>
+                                    <li><a class="dropdown-item" href="#">Veelgestelde vragen</a></li>
+                                    <li><a class="dropdown-item" href="#">Drank- en drugsbeleid</a></li>
+                                    <li><a class="dropdown-item" href="#">GDPR</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown has-megamenu">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Over ons <i class="bi-chevron-down"></i></a>
+                            <div class="dropdown-menu megamenu" role="menu" aria-labelledby="navbarDropdown">
+                                <ul class="container-3xl mx-auto">
+                                    <li class="container-3xl"><a class="dropdown-item" href="#">Foto's</a></li>
+                                    <li class="container-3xl"><a class="dropdown-item" href="#">Jaarthema</a></li>
+                                    <li class="container-3xl"><a class="dropdown-item" href="#">Wie zijn wij?</a></li>
+                                    <li class="container-3xl"><a class="dropdown-item" href="#">Wat is scouts?</a></li>
+                                    <li class="container-3xl"><a class="dropdown-item" href="#">VZW</a></li>
+                                    <li class="container-3xl"><a class="dropdown-item" href="#">Achter de schermen</a></li>
+                                    <li class="container-3xl"><a class="dropdown-item" href="#">Informatieplicht vrijwilligers</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown has-megamenu">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Overig <i class="bi-chevron-down"></i></a>
+                            <div class="dropdown-menu megamenu" role="menu" aria-labelledby="navbarDropdown">
+                                <ul class="container-3xl mx-auto">
+                                    <li class="container-3xl"><a class="dropdown-item" href="#">Uitpas & Scouting op Maat</a></li>
+                                    <li class="container-3xl"><a class="dropdown-item" href="#">Groepsadministratie</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="container-fluid header-banner">
+    <span class="container-fluid d-flex align-items-center justify-content-center">
+        <h2 class="">Sinds 1958</h2>
+    </span>
+</div>
+<section class="container-3xl mx-auto news-article-info">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Contact</li>
+        </ol>
+    </nav>
+    <h1>Contact</h1>
+</section>
+<section class="container-3xl mx-auto contact-wrapper">
+    <h2 class="h2-alt">Zit je met een vraag? Of wil je ons iets laten weten?<br/>Contacteer ons via het contactformulier hieronder.</h2>
+    <div class="card contact-card container-2xl mx-auto">
+        <div class="card-body">
+            <p class="card-text">Bel je liever? Dat kan op <span class="number">+32 1 234 56 78.</span></p>
+            <p class="card-text">Bij nood kan je ook terecht op het <span>noodnummer</span>: <span class="number">+32 123 45 67 89</span>.</p>
+            <p class="card-text">Iemand specifiek nodig?</p>
+            <div class="d-md-flex align-items-center justify-content-between">
+                <div class="form-group w-50">
+                    <label for="controlContactDropdown" class="d-none"></label>
+                    <select class="form-control form-select" id="controlContactDropdown">
+                        <option class="contact-name">Persoon A - functie</option>
+                        <option class="contact-name">Persoon B - functie</option>
+                        <option class="contact-name">Persoon C - functie</option>
+                        <option class="contact-name">Persoon D - functie</option>
+                        <option class="contact-name">Persoon E - functie</option>
+                    </select>
+                </div>
+                <p class="card-text pt-3 pt-md-0">Bereikbaar op: <span class="number">+32 123 45 67 89</span></p>
+            </div>
+        </div>
+    </div>
+    <div class="container-3xl mx-auto contact-form-wrapper">
+        <form>
+            <div class="form-group">
+                <div class="row row-cols-1 row-cols-md-2">
+                    <div class="col">
+                        <label for="exampleFormControlSelect1">Wie wil je contacteren? *</label>
+                        <select class="form-control form-select" id="exampleFormControlSelect1">
+                            <option class="contact-name">Algemeen - algemeen@loremipsum.be</option>
+                            <option class="contact-name">Persoon B - loremipsumdolor@loremipsum.be</option>
+                            <option class="contact-name">Persoon C - sitametloremipsum@loremipsum.be</option>
+                            <option class="contact-name">Persoon D - dolorsit@loremipsum.be</option>
+                            <option class="contact-name">Persoon E - ametlorem@loremipsum.be</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row row-cols-1 row-cols-md-2">
+                <div class="col">
+                    <label for="exampleFormControlInput1">Je naam *</label>
+                    <input type="text" class="form-control" placeholder="Voornaam en familienaam">
+                </div>
+                <div class="col">
+                    <label for="exampleFormControlInput1">Je e-mailadres *</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="formGroupExampleInput">Onderwerp *</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Je vraag *</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn-dark">Versturen</button>
+        </form>
+    </div>
+    <div class="card contact-card container-2xl mx-auto">
+        <div class="card-body">
+            <p class="card-text">Misschien kan je het antwoord op je vraag wel vinden in de veelgestelde vragen hieronder.</p>
+        </div>
+    </div>
+    <div class="container-3xl mx-auto">
+        <h2>Veelgestelde vragen</h2>
+        <div class="accordion">
+            <div class="accordion-item accordion-card">
+                <h4 class="accordion-header card-header" id="headingOne">
+                    <button class="accordion-button collapsed btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        Hoe word ik lid van Scouts Volta?
+                    </button>
+                </h4>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body card-body">
+                        Lid worden van Scouts Sint-Bernadette kan je pas vanaf je in het 1e leerjaar zit óf je je aansluit tijdens het jaar waarin je 6 wordt. Meer informatie over hoe je dat precies doet vind je hier: ‘k wil erbij!
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item accordion-card">
+                <h4 class="accordion-header card-header" id="headingTwo">
+                    <button class="accordion-button collapsed btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Bij welke tak hoor ik thuis?
+                    </button>
+                </h4>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item accordion-card">
+                <h4 class="accordion-header card-header" id="headingThree">
+                    <button class="accordion-button collapsed btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Wat is het adres van de scouts?
+                    </button>
+                </h4>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item accordion-card">
+                <h4 class="accordion-header card-header" id="headingFour">
+                    <button class="accordion-button collapsed btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Bij wie kan ik terecht bij vragen?
+                    </button>
+                </h4>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                    <div class="accordion-body card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item accordion-card">
+                <h4 class="accordion-header card-header" id="headingFive">
+                    <button class="accordion-button collapsed btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        Hoeveel bedraagt het lidgeld?
+                    </button>
+                </h4>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                    <div class="accordion-body card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item accordion-card">
+                <h4 class="accordion-header card-header" id="headingSix">
+                    <button class="accordion-button collapsed btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        Wanneer is het scouts?
+                    </button>
+                </h4>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                    <div class="accordion-body card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="btn-dark" href="#">Meer veelgestelde vragen</a>
+    </div>
+</section>
+<footer class="container-fluid footer">
+    <div class="container-3xl row row-cols-1 row-cols-md-4 g-5">
+        <section class="col">
+            <ul class="flex flex-row">
+                <li><p class="address">Scouts Volta</p></li>
+                <li><p class="address">Adresstraat 1</p></li>
+                <li><p class="address">1234 Postcode</p></li>
+                <li><p class="copyright">© 2021 Scouts Volta</p></li>
+                <li><a href="#" class="gdpr">Privacyverklaring</a></li>
+            </ul>
+        </section>
+        <section class="col">
+            <ul class="flex flex-row">
+                <li><a href="" class="">Link 1 Lorem ipsum</a></li>
+                <li><a href="" class="">Link 2 Dolor sit amet</a></li>
+                <li><a href="" class="">Link 3 Consectetur adipiscing</a></li>
+            </ul>
+        </section>
+        <section class="col">
+            <ul class="flex flex-row">
+                <li><a href="" class="">Link 4 Sed do eiusmod</a></li>
+                <li><a href="" class="">Link 5 Tempor incididunt</a></li>
+                <li><a href="" class="">Link 6 Ut labore et dolore</a></li>
+            </ul>
+        </section>
+        <section class="col flex flex-row">
+            <h4>Volg ons</h4>
+            <a href="" class="d-inline-block socials"><i class="bi-facebook"></i></a>
+            <a href="" class="d-inline-block socials"><i class="bi-twitter"></i></a>
+            <a href="" class="d-inline-block socials"><i class="bi-youtube"></i></a>
+        </section>
+    </div>
+</footer>
+
+
+<!-- script from framework Bootstrap needed for framework based scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+<!-- own script for self written scripts -->
+<script src="./assets/js/script.js"></script>
+</body>
+</html>
