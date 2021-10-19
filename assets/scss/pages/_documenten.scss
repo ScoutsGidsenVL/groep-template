@@ -2,11 +2,22 @@
   margin-top: 80px;
   .document-article-wrapper {
     border: none;
+    img {
+      width: auto;
+      height: 100%;
+        @media all and (max-width: 800px) {
+          width: 100%;
+          height: auto;
+        }
+    }
     .card-body {
       padding-right: 40px;
       padding-left: 40px;
-      clip-path: polygon(0 0, 100% 0%, 98% 100%, 0% 100%);
       background-color: $clr-tertiary;
+
+      @media all and (min-width: 768px) {
+        clip-path: polygon(0 0, 100% 0%, 98% 100%, 0% 100%);
+      }
     }
     .document-date {
       margin-top: 16px;

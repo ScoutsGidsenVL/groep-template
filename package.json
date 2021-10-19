@@ -2,6 +2,7 @@
   "dependencies": {
     "@babel/preset-env": "^7.15.0",
     "bootstrap-icons": "^1.5.0",
+    "core-js": "^3.18.3",
     "polyfills": "^2.1.1"
   },
   "devDependencies": {

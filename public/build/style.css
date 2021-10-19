@@ -1,3 +1,5 @@
+/* Typography variables */
+/* Color variables */
 h1 {
   font-family: "aglet-slab", sans-serif;
   color: #8C2035;
@@ -55,7 +57,6 @@ i {
   transition: all 150ms ease-in-out;
 }
 .btn-primary i {
-  opacity: 0;
   color: #8C2035;
   margin-right: 8px;
 }
@@ -67,9 +68,6 @@ i {
 }
 .btn-primary:hover span {
   right: 0;
-}
-.btn-primary:hover i {
-  animation: fadein 150ms 150ms forwards;
 }
 .btn-primary:hover:after {
   height: 100%;
@@ -129,9 +127,9 @@ option,
   font-family: "museo-sans", sans-serif;
   font-weight: 300;
 }
-select#controlContactDropdown,
-option#controlContactDropdown,
-.form-select#controlContactDropdown {
+select#selectContactNumber,
+option#selectContactNumber,
+.form-select#selectContactNumber {
   background-color: transparent;
   border: 1px solid #C69BA3;
   border-radius: 3px;
@@ -147,6 +145,12 @@ footer.footer {
   background-color: #FAF5F6;
   margin: 160px auto 0;
   padding: 40px 0;
+}
+@media all and (max-width: 800px) {
+  footer .container-3xl {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
 }
 footer .col {
   padding: 0;
@@ -450,8 +454,8 @@ footer ul:first-child li:nth-child(3) {
 }
 @media all and (max-width: 1310px) {
   .container-3xl {
-    padding-right: 8px;
-    padding-left: 8px;
+    padding-right: 20px;
+    padding-left: 20px;
   }
 }
 
@@ -462,10 +466,10 @@ footer ul:first-child li:nth-child(3) {
   margin-left: auto;
   max-width: 840px;
 }
-@media all and (max-width: 1199px) {
+@media all and (max-width: 1310px) {
   .container-2xl {
-    padding-right: 8px;
-    padding-left: 8px;
+    padding-right: 20px;
+    padding-left: 20px;
   }
 }
 
@@ -517,6 +521,14 @@ main ul li {
 .contact-card .card-body .card-text:last-child {
   margin-top: 0;
 }
+.contact-card .card-body .form-group {
+  width: 100%;
+}
+@media all and (min-width: 768px) {
+  .contact-card .card-body .form-group {
+    width: 50%;
+  }
+}
 .contact-card .card-body span {
   font-weight: 700;
 }
@@ -524,9 +536,9 @@ main ul li {
   color: #8C2035;
   font-weight: 500;
 }
-.contact-card .card-body select#controlContactDropdown,
-.contact-card .card-body option#controlContactDropdown,
-.contact-card .card-body .form-select#controlContactDropdown {
+.contact-card .card-body select#selectContactNumber,
+.contact-card .card-body option#selectContactNumber,
+.contact-card .card-body .form-select#selectContactNumber {
   padding: 16px 32px 16px 16px;
 }
 
@@ -541,6 +553,11 @@ main ul li {
 }
 .contact-form-wrapper .form-group {
   margin-bottom: 24px;
+}
+@media all and (max-width: 767px) {
+  .contact-form-wrapper .form-group .name-col {
+    margin-bottom: 24px;
+  }
 }
 .contact-form-wrapper .form-control {
   padding: 16px 32px 16px 16px;
@@ -589,11 +606,25 @@ main ul li {
 .document-section .document-article-wrapper {
   border: none;
 }
+.document-section .document-article-wrapper img {
+  width: auto;
+  height: 100%;
+}
+@media all and (max-width: 800px) {
+  .document-section .document-article-wrapper img {
+    width: 100%;
+    height: auto;
+  }
+}
 .document-section .document-article-wrapper .card-body {
   padding-right: 40px;
   padding-left: 40px;
-  clip-path: polygon(0 0, 100% 0%, 98% 100%, 0% 100%);
   background-color: #FAF5F6;
+}
+@media all and (min-width: 768px) {
+  .document-section .document-article-wrapper .card-body {
+    clip-path: polygon(0 0, 100% 0%, 98% 100%, 0% 100%);
+  }
 }
 .document-section .document-article-wrapper .document-date {
   margin-top: 16px;
@@ -629,21 +660,38 @@ main ul li {
   margin-bottom: 80px;
   min-height: 650px;
 }
+@media all and (max-width: 800px) {
+  .main-post {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
 .main-post .main-post-text {
-  width: 60%;
-  height: 550px;
   background-color: #FAF5F6;
-  top: 50px;
-  left: 0;
   padding-top: 40px;
   padding-left: 80px;
-  padding-right: 24%;
+}
+@media all and (max-width: 800px) {
+  .main-post .main-post-text {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media all and (min-width: 800px) {
+  .main-post .main-post-text {
+    position: absolute;
+    width: 60%;
+    height: 550px;
+    top: 50px;
+    left: 0;
+    padding-right: 24%;
+  }
 }
 @media all and (max-width: 1200px) {
   .main-post .main-post-text {
     height: max-content;
     padding-left: 40px;
-    padding-bottom: 12%;
+    padding-bottom: 10%;
     padding-right: 15%;
   }
 }
@@ -657,24 +705,39 @@ main ul li {
 .main-post .main-post-text .nav-pills .nav-link {
   margin-left: 0;
 }
-.main-post .main-post-image {
-  width: 60%;
-  height: 530px;
-  right: 0;
+@media all and (max-width: 800px) {
+  .main-post .main-post-image {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #FAF5F6;
+  }
 }
-@media all and (max-width: 1200px) {
+@media all and (min-width: 800px) {
+  .main-post .main-post-image {
+    position: absolute;
+    width: 60%;
+    height: 530px;
+    right: 0;
+  }
+  .main-post .main-post-image img {
+    clip-path: polygon(0 0, 100% 0, 97% 96%, 0% 100%);
+  }
+}
+@media all and (min-width: 800px) and (max-width: 1200px) {
   .main-post .main-post-image {
     width: 50%;
   }
-}
-.main-post .main-post-image img {
-  clip-path: polygon(0 0, 100% 0, 97% 96%, 0% 100%);
 }
 .main-post .main-post-image .figure-caption {
   font-family: "museo-sans", sans-serif;
   font-weight: 700;
   color: #000000;
   margin-top: 12px;
+}
+@media all and (max-width: 800px) {
+  .main-post .main-post-image .figure-caption {
+    padding-left: 40px;
+  }
 }
 
 .news-feed {
@@ -702,6 +765,7 @@ main ul li {
 .news-feed .call-to-action-text {
   margin-left: 0;
   display: inline-block;
+  padding-right: 10px;
 }
 
 .breadcrumb li,
@@ -717,7 +781,7 @@ main ul li {
   clip-path: polygon(0 0, 100% 0, 97% 96%, 0% 100%);
 }
 .news-article .btn-primary {
-  font-size: 16px;
+  font-size: 20px;
 }
 .news-article .news-date,
 .news-article .document-date {
@@ -745,11 +809,21 @@ main ul li {
 
 .news-article-img img {
   clip-path: polygon(0 0, 100% 0, 97% 96%, 0% 100%);
-  margin-top: 80px;
+  margin-top: 40px;
+}
+@media all and (min-width: 968px) {
+  .news-article-img img {
+    margin-top: 40px;
+  }
 }
 
 .news-article-text {
-  margin: 80px auto;
+  margin: 40px auto;
+}
+@media all and (min-width: 968px) {
+  .news-article-text {
+    margin: 80px auto;
+  }
 }
 .news-article-text .news-article-text-author {
   margin-top: 80px;
@@ -763,5 +837,8 @@ main ul li {
   margin-bottom: 32px;
 }
 .recent-news .recent-news-wrapper {
+  margin-top: 0;
+}
+.recent-news .recent-news-wrapper .col {
   margin-top: 0;
 }

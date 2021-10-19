@@ -34,6 +34,14 @@
         margin-top: 0;
       }
     }
+    .form-group {
+      width: 100%;
+    }
+    @media all and (min-width: 768px) {
+      .form-group {
+        width: 50%;
+      }
+    }
     span {
       font-weight: $main-font-weight-semibold;
     }
@@ -41,9 +49,9 @@
       color: $clr-main;
       font-weight: $main-font-weight-regular;
     }
-    select#controlContactDropdown,
-    option#controlContactDropdown,
-    .form-select#controlContactDropdown {
+    select#selectContactNumber,
+    option#selectContactNumber,
+    .form-select#selectContactNumber {
       padding: 16px 32px 16px 16px;
     }
 
@@ -59,6 +67,13 @@
   }
   .form-group {
     margin-bottom: 24px;
+
+    @media all and (max-width: 767px) {
+      .name-col {
+        margin-bottom: 24px;
+      }
+    }
+
   }
   .form-control {
     padding: 16px 32px 16px 16px;

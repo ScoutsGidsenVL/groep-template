@@ -1,5 +1,15 @@
+/* Typography variables */
 $main-font: "museo-sans", sans-serif;
 $secondary-font: "aglet-slab", sans-serif;
+$main-font-weight-light: 300;
+$main-font-weight-regular: 500;
+$main-font-weight-semibold: 700;
+$main-font-weight-bold: 900;
+$secondary-font-weight-regular: 400;
+$secondary-font-weight-semibold: 500;
+$secondary-font-weight-bold: 700;
+
+/* Color variables */
 $clr-white: #FFFFFF;
 $clr-black: #000000;
 $clr-grey: #6C757D;
@@ -8,10 +18,3 @@ $clr-main: #8C2035;
 $clr-main-20: rgba(140, 32, 53, 0.2);
 $clr-secondary: #C69BA3;
 $clr-tertiary: #FAF5F6;
-$main-font-weight-light: 300;
-$main-font-weight-regular: 500;
-$main-font-weight-semibold: 700;
-$main-font-weight-bold: 900;
-$secondary-font-weight-regular: 400;
-$secondary-font-weight-semibold: 500;
-$secondary-font-weight-bold: 700;

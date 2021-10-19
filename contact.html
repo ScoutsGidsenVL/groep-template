@@ -10,9 +10,7 @@
     <!-- stylesheet for using the Bootstrap icons library -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <!-- own stylesheet for self written styling -->
-    <link rel="stylesheet" href="./assets/css/main.css">
-    <!-- own stylesheet for self written styling -->
-    <link rel="stylesheet" href="./assets/scss/style.css">
+    <link rel="stylesheet" href="/public/build/style.css">
     <!-- Page title visible in the tab of your browser -->
     <title>Contact - Scouts Volta</title>
 </head>
@@ -164,21 +162,21 @@
     <h2 class="h2-alt">Zit je met een vraag? Of wil je ons iets laten weten?<br/>Contacteer ons via het contactformulier hieronder.</h2>
     <div class="card contact-card container-2xl mx-auto">
         <div class="card-body">
-            <p class="card-text">Bel je liever? Dat kan op <span class="number">+32 1 234 56 78.</span></p>
-            <p class="card-text">Bij nood kan je ook terecht op het <span>noodnummer</span>: <span class="number">+32 123 45 67 89</span>.</p>
+            <p class="card-text">Bel je liever? Dat kan op <span class="number">+32 234 56 78.</span></p>
+            <p class="card-text">Bij nood kan je ook terecht op het <span>noodnummer</span>: <span class="number">+32 123 45 67</span>.</p>
             <p class="card-text">Iemand specifiek nodig?</p>
             <div class="d-md-flex align-items-center justify-content-between">
-                <div class="form-group w-50">
-                    <label for="controlContactDropdown" class="d-none"></label>
-                    <select class="form-control form-select" id="controlContactDropdown">
-                        <option class="contact-name">Persoon A - functie</option>
-                        <option class="contact-name">Persoon B - functie</option>
-                        <option class="contact-name">Persoon C - functie</option>
-                        <option class="contact-name">Persoon D - functie</option>
-                        <option class="contact-name">Persoon E - functie</option>
+                <div class="form-group">
+                    <label for="selectContactNumber" class="d-none"></label>
+                    <select class="form-control form-select" id="selectContactNumber" name="selectContactNumber" onchange="printSelectedContactNumber()">
+                        <option class="contact-name" value="+32 123 45 67">Persoon A - functie</option>
+                        <option class="contact-name" value="+32 223 45 67">Persoon B - functie</option>
+                        <option class="contact-name" value="+32 323 45 67">Persoon C - functie</option>
+                        <option class="contact-name" value="+32 423 45 67">Persoon D - functie</option>
+                        <option class="contact-name" value="+32 523 45 67">Persoon E - functie</option>
                     </select>
                 </div>
-                <p class="card-text pt-3 pt-md-0">Bereikbaar op: <span class="number">+32 123 45 67 89</span></p>
+                <p class="card-text pt-3 pt-md-0">Bereikbaar op: <span class="number contactNumber">+32 123 45 67</span></p>
             </div>
         </div>
     </div>
@@ -187,8 +185,8 @@
             <div class="form-group">
                 <div class="row row-cols-1 row-cols-md-2">
                     <div class="col">
-                        <label for="exampleFormControlSelect1">Wie wil je contacteren? *</label>
-                        <select class="form-control form-select" id="exampleFormControlSelect1">
+                        <label for="selectContactMail">Wie wil je contacteren? *</label>
+                        <select class="form-control form-select" id="selectContactMail">
                             <option class="contact-name">Algemeen - algemeen@loremipsum.be</option>
                             <option class="contact-name">Persoon B - loremipsumdolor@loremipsum.be</option>
                             <option class="contact-name">Persoon C - sitametloremipsum@loremipsum.be</option>
@@ -199,7 +197,7 @@
                 </div>
             </div>
             <div class="form-group row row-cols-1 row-cols-md-2">
-                <div class="col">
+                <div class="col name-col">
                     <label for="exampleFormControlInput1">Je naam *</label>
                     <input type="text" class="form-control" placeholder="Voornaam en familienaam">
                 </div>
@@ -210,7 +208,7 @@
             </div>
             <div class="form-group">
                 <label for="formGroupExampleInput">Onderwerp *</label>
-                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Onderwerp">
             </div>
             <div class="form-group">
                 <label for="exampleFormControlTextarea1">Je vraag *</label>
@@ -341,6 +339,6 @@
 <!-- script from framework Bootstrap needed for framework based scripts -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 <!-- own script for self written scripts -->
-<script src="./assets/js/script.js"></script>
+<script src="/public/js/script.js"></script>
 </body>
 </html>
