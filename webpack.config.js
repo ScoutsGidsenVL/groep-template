@@ -24,15 +24,15 @@ Encore
      * and one CSS file (e.g. app.css) if your JavaScript imports CSS.
      */
     .addStyleEntry('style', './assets/scss/style.scss')
-    //.addEntry('page2', './assets/page2.js')
+    .addEntry('script', './assets/js/script.js')
 
     // When enabled, Webpack "splits" your files into smaller pieces for greater optimization.
     //.splitEntryChunks()
 
     // will require an extra script tag for runtime.js
     // but, you probably want this, unless you're building a single-page app
-    .enableSingleRuntimeChunk()
-
+    //.enableSingleRuntimeChunk()
+    .disableSingleRuntimeChunk()
     /*
      * FEATURE CONFIG
      *
