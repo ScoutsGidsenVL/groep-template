@@ -12,19 +12,13 @@ loadmore?.addEventListener('click', (e) => {
 
     // Load more button will be hidden after list fully loaded
     if (currentItems >= elementList.length) {
-        event.target.style.display = 'none';
+        e.target.style.display = 'none';
     }
 })
 
+//Show number of selected item in dropdown on contact page
 const selectContactNumber = document.querySelector('#selectContactNumber');
 selectContactNumber.addEventListener('change', (event) => {
     const selectedContactNumber = document.querySelector('.contactNumber');
     selectedContactNumber.textContent = event.target.value;
 })
-
-//Show number of selected item in dropdown on contact page
-/* function printSelectedContactNumber() {
-    const e = document.getElementById("selectContactNumber");
-    let selectedContactNumber = e.options[e.selectedIndex].value;
-    alert(selectedContactNumber);
-} */
