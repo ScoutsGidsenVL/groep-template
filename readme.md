@@ -3,7 +3,7 @@
 Onderstaande commando's maken gebruik van [npm](https://docs.npmjs.com/about-npm) of [Yarn](https://classic.yarnpkg.com/en/docs/install).
 Installeren kan makkelijk via de hiervoor vermelde links. Niet zeker of npm of yarn is geïnstalleerd op je systeem?
 
-###Gebruik onderstaand commando om na te kijken of npm is geïnstalleerd op je systeem.
+### Gebruik onderstaand commando om na te kijken of npm is geïnstalleerd op je systeem.
 ```bash
 npm -v
 ```
@@ -13,7 +13,7 @@ npm --version
 ```
 
 
-###Gebruik onderstaand commando om na te kijken of Yarn is geïnstalleerd op je systeem.
+### Gebruik onderstaand commando om na te kijken of Yarn is geïnstalleerd op je systeem.
 ```bash
 yarn -v
 ```
