@@ -3068,8 +3068,8 @@ mz@^2.0.0, mz@^2.1.0:
     thenify-all "^1.0.0"
 
 nanoid@^3.1.30:
-  version "3.1.30"
-  resolved "https://registry.npmjs.org/nanoid/-/nanoid-3.1.30.tgz"
+  version "3.3.4"
+  resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-3.3.4.tgz#730b67e3cd09e2deacf03c027c81c9d9dbc5e8ab"
 
 native-or-bluebird@1:
   version "1.2.0"
