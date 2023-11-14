@@ -1,4 +1,15 @@
-# Aan de slag met deze template
+# Doel
+
+Deze template dient als voorbeeld-lay-out van een groepssite voor scoutsgroepen die zijn aangesloten bij Scouts en Gidsen Vlaanderen.
+
+# Gebruik
+
+* Bekijk de [template](https://groep-template.scoutsengidsenvlaanderen.be/) om je te laten inspireren.
+* Of importeer deze template in een platform dat dat ondersteunt. Zie [een website voor je groep](https://www.scoutsengidsenvlaanderen.be/leiding/ondersteuning/groepsleiding/website-en-it/een-website-voor-je-groep) voor meer info.
+
+# Deze template zelf draaien
+
+Dit is enkel van toepassing als je aanpassingen wilt maken aan de template.
 
 Onderstaande commando's maken gebruik van [npm](https://docs.npmjs.com/about-npm) of [Yarn](https://classic.yarnpkg.com/en/docs/install).
 Installeren kan makkelijk via de hiervoor vermelde links. Niet zeker of npm of yarn is geïnstalleerd op je systeem?
